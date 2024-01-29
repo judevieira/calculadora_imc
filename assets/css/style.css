@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    /*#DE181C cor da ilustracao*/
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+#imagem img{
+    width: 35rem;
+
+}
+
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: #32515e;
+    border-radius: 6%;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+#formulario{
+    display: flex; 
+    flex-direction: column;
+    gap: 2rem;  
+
+}
+
+#titulo {
+    font-size: 2rem;
+    border-bottom: solid;
+    border-color:#e6544f ;
+}
+
+.campo_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #b9b9b9;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.campo_input span,
+.campo_input i {
+    padding: 0.2rem;
+}
+
+.campo_input input {
+    background-color: transparent;
+    padding: 0 0.5rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    
+}
+
+.campo_input input :focus, input:focus, select:focus {
+    outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+#botao_calcular{
+    background-color: #e6544f;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 0.20rem ;
+    font-family: 'Poppins', sans-serif;
+}
+
+#informacoes{
+    border-top: solid #b9b9b9;
+}
+
+#resultado{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#imc{
+    display: flex;
+    flex-direction: column;
+}
+
+#valor{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#imc span:last-child{
+    font-size: 0.9rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+}
+
+#descricao span{
+    font-size: 0.9rem;
+}
+
+
+#mais_infos a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color:#e6544f
+}
+
+
+#mais_infos a:hover{
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    #imagem{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    #container{
+        width: 100%;
+        height: 100%;
+    }
+
+    #calculadora{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+}
+
+
